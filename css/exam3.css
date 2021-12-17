@@ -1,0 +1,489 @@
+/*-------------------------- stsrt basic classes--------------------*/
+body
+{
+    margin:0px;
+    font-family:system-ui;
+}
+.container 
+{
+    margin: auto;
+    width: 85%;
+  
+}
+.left
+{
+    float:left
+}
+.right
+{
+    float:right
+}
+.line 
+{
+   width: 14%;
+    background-color: cadetblue;
+    height: 2px;
+    position: relative;
+    top: -12px;
+    left: 89px;
+}
+button
+{
+    color: beige;
+    background-color:#5fcf80;  
+    padding:9px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size:16px;
+    letter-spacing: 1px
+}
+/*animateOnScroll*/
+/*-------------------------- end basic classes--------------------*/
+/*-----------------------start navbar---------------------*/
+nav
+{
+    
+}
+nav .container
+{
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .logo ,nav .container .links
+{
+     margin-top: 5px;
+    font-weight: 500
+}
+nav .container .logo h2
+{
+  color: #5fcf80;  
+}
+nav .container .links > ul
+{
+  display: flex;
+  
+}
+nav .container .links > ul li
+{
+    list-style: none;
+    margin: 11px  
+}
+nav .container .links > ul li > ul
+{
+  padding: 0px;
+    position: absolute;
+    background-color: #7fcf8038;
+    margin-top: 21px;
+    display: none
+}
+nav .container .links > ul li > ul li
+{
+  margin: 2px;
+    padding: 3px; 
+}
+@media(max-width:767px)
+{
+  nav .container
+    {
+        display: block;
+    }  
+    nav .container .links ul 
+    {
+        display: block
+    }
+    nav .container .links > ul li > ul
+    {
+       left: 195px;;
+       top: 30%;  
+    }
+}
+/*-----------------------end navbar---------------------*/
+/*-----------------------start header---------------------*/
+header
+{
+ background-image: url(../image/hero-bg.jpg); 
+ background-size: cover;
+ background-attachment: fixed;
+}
+header .header
+{
+  background-color:#2e1f1173;
+  
+}
+header .container 
+{
+ color:beige;
+ 
+}
+header .container h1
+{
+ padding-top: 13%;
+    font-size: 50px;
+    margin: 0px;  
+}
+header .container button
+{
+      background-color: #85674c00;
+    border: 1px solid beige;
+    outline: none;
+    width:178px;
+    margin-top: 30px;
+    padding: 13px;
+    margin-bottom:7%;
+}
+header .container button:hover
+{
+ background-color:#5fcf80;
+ border: 1px solid #5fcf80;
+ transition: 1s all
+}
+/*-----------------------end header---------------------*/
+/*-----------------------start about ---------------------*/
+.about
+{
+ margin-top: 60px  
+}
+.about .container
+{
+ display: flex;
+ justify-content: space-between;
+}
+.about .container .text
+{
+ width: 45%    
+}
+.about .container .text p
+{
+  color:gray;
+}
+.about .container .text p span
+{
+ color:#5fcf80;
+ font-size: 21px
+}
+.about .container .image
+{
+ width:50%   
+}
+.about .container .image img
+{
+  width: 100%  
+}
+@media(max-width:767px)
+{
+  .about .container
+    {
+        display: block;
+    }
+    .about .container .text ,.about .container .image
+    {
+        width: 100%;
+        margin-bottom: 10px
+    }
+}
+@media(min-width:768px) and (max-width:1200px) 
+{
+  .about .container
+    {
+        display: block;
+    }
+    .about .container .text ,.about .container .image
+    {
+        width: 100%;
+        margin-bottom: 10px
+    }
+}
+/*-----------------------end  about---------------------*/
+/*-----------------------start about1 ---------------------*/
+.about1
+{
+  margin-top: 60px;
+  background-color: #ddd; 
+  padding-bottom: 20px
+}
+.about1 .container
+{
+  display: flex;
+ justify-content: space-around;
+}
+.about1 .container div
+{
+    text-align: center
+}
+.about1 .container div h3 
+{
+ color:#5fcf80; 
+font-size:42px;
+ margin-bottom: 19px;
+}
+.about1 .container div p
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+@media(max-width:767px)
+{
+  .about1 .container
+    {
+        display:flex;
+        flex-wrap: wrap
+    }
+    .about1 .container div
+    {
+        width: 50%
+    }
+}
+/*-----------------------end  about1---------------------*/
+/*-----------------------start about2---------------------*/
+.about2
+{
+ margin-top: 50px   
+}
+.about2 .container 
+{
+  display: flex;
+flex-wrap: wrap;
+ justify-content: space-between;
+}
+.about2 .container .big
+{
+line-height: 1.5;
+  width: 29%;
+  color: white;
+  padding: 27px;
+  box-sizing: border-box;
+  background-color:#5fcf80;
+  border-radius: 5px;
+}
+.about2 .container .big button
+{
+   background-color:#74e495; 
+    width: 46%;
+    margin-left: 22%;
+}
+.about2 .container .three
+{
+    margin: auto;
+    padding: 37px;
+    box-sizing: border-box;
+    width: 22%;
+    border: 1px solid #dddddd61;
+    text-align: center;
+}
+.about2 .container .three span
+{
+  padding: 18px;
+    color: #5fcf80;
+    margin-bottom: 30px;
+    background: #ecf9f0;
+    border-radius: 50%;
+    font-size:22px;
+}
+.about2 .container .three p
+{
+    color: gray
+}
+@media(max-width:767px)
+{
+    .about2 .container .big
+    {
+      width: 100% ;
+      margin-bottom:11px
+    }
+    .about2 .container .three
+    {
+      width: 95%  ;
+      margin-bottom:11px
+    }
+}
+/*-----------------------end  about2---------------------*/
+/*-----------------------start about3---------------------*/
+.about3
+{
+ margin-top:100px ;
+ margin-bottom: 150px
+}
+.about3 .container 
+{
+  display: flex;
+flex-wrap: wrap;
+ justify-content: space-between;
+}
+.about3 .container .icon
+{
+ width: 24%;
+ box-sizing: border-box;
+ padding: 10px;
+ border: 1px solid #dddddd61;
+ margin-bottom:27px;
+ border-radius: 6px
+}
+.about3 .container .icon p
+{
+     font-size: 18px;
+    font-weight: 600;
+}
+.about3 .container .icon p span 
+{
+ color: #8fa6ff;
+ font-size: 28px;
+}
+.about3 .container .icon:nth-of-type(2) p span 
+{
+ color:#e80368
+}
+.about3 .container .icon p span :nth-of-type(3)
+{
+ color:#e80368
+}
+.about3 .container .icon p span :nth-of-type(4)
+{
+ color:#5bd886
+}
+.about3 .container .icon p span :nth-of-type(5)
+{
+ color:#e361ff
+}
+.about3 .container .icon p span :nth-of-type(6)
+{
+ color:#ff724a
+}
+.about3 .container .icon p span :nth-of-type(7)
+{
+ color:#47aeff
+}
+.about3 .container .icon p span :nth-of-type(8)
+{
+ color:#b20969
+}
+.about3 .container .icon p span :nth-of-type(9)
+{
+ color:#11dbcf
+}
+.about3 .container .icon p span :nth-of-type(10)
+{
+ color:#b59557
+}
+.about3 .container .icon p span :nth-of-type(11)
+{
+ color:#ffa76f
+}
+.about3 .container .icon p span :nth-of-type(12)
+{
+ color:#4233ff
+}
+.about3 .container .icon:hover
+{
+  transition: 1s all;
+  color:#5fcf80;
+  border:2px solid #5fcf80;
+}
+/*-----------------------end  about3---------------------*/
+/*----------------------start courses--------------------*/ 
+.courses
+{
+ margin-bottom: 50px;
+ margin-top: 50px
+}
+.courses .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.courses h3 , .courses h1
+{
+ margin-left:8% ;
+}
+.courses .container .course
+{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 9px;
+    box-shadow: 0px 1px 7px #ddd 
+}
+.courses .container .course img 
+{
+    width: 99%
+}
+.courses .container .course .contant
+{
+    display: flex;
+    margin-top:14PX;
+    justify-content: space-between;
+}
+.courses .container .course .contant button 
+{
+    color: beige;
+    border: none;
+    outline: none;
+    background-color:#1b916b;
+    padding: 7px;
+    font-family: cursive
+}
+.courses .container .course .contant img 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.courses .container .course .contant span
+{
+ padding-left:5px;
+ color:#ada7a7
+}
+@media(max-width:676px)
+{
+  .courses .container .course
+    {
+     width: 98%;
+     margin-bottom: 30px
+    } 
+}
+@media (min-width:677px) and (max-width:1100px)
+{
+  .courses .container .course
+    {
+     width:49%;
+     margin-bottom:30px;
+     box-sizing: border-box
+    } 
+}
+/*----------------------end  courses--------------------*/ 
+/*----------------------start box --------------------*/ 
+.boxs
+{
+ margin-top: 150PX;
+    margin-bottom: 150px;
+ 
+}
+.boxs .container 
+{
+   display: flex;
+    justify-content: space-between; 
+}
+.boxs .container .box
+{
+    width: 30%;
+    border: 1px solid #cec6c640;
+    text-align: center;
+    box-sizing: border-box;
+}
+.boxs .container .box img
+{
+  width: 100%   
+}
+.boxs .container .box p 
+{
+  padding: 14px  
+}
+.boxs .container .box p span
+{
+  margin-right: 5px;
+    font-size: 27px;
+    color: #7e9486;
+}
+/*----------------------end  box --------------------*/ 
